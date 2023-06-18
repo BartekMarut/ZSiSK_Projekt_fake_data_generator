@@ -1,0 +1,22 @@
+from django.db import models
+
+class User(models.Model):
+    imie = models.CharField(max_length=100)
+    drugie_imie = models.CharField(max_length=100)
+    nazwisko = models.CharField(max_length=100)
+    email = models.EmailField()
+    pesel = models.CharField(max_length=12)
+    telefon = models.CharField(max_length=20)
+    wojewodztwo = models.CharField(max_length=50)
+    ulica = models.CharField(max_length=200)
+    miejscowosc = models.CharField(max_length=200)
+    kod_pocztowy = models.CharField(max_length=10)
+    tablica_rejestracyjna = models.CharField(max_length=30)
+    iban = models.CharField(max_length=100)
+    firma = models.CharField(max_length=100)
+    regon = models.CharField(max_length=100)
+    data_urodzin = models.DateTimeField(max_length=100)
+    ipv4 = models.CharField(max_length=100)
+    ipv6 = models.CharField(max_length=100)
+    praca = models.CharField(max_length=100)
+    nip = models.CharField(max_length=100)
